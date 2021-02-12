@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ConfirmAssigneeInActivityLayoutt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <CheckBox
+            android:id="@+id/ConfirmAssigneeInActivityCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I confirm to add below people to \n the current activity which I am in:" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/ConfirmAssigneeInActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ConfirmSubActivitiesInActivityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <CheckBox
+            android:id="@+id/ConfirmSubActivitiesInActivityCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I confirm to include below activity(s) to \n the current activity which I am in:" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/ConfirmSubActivitiesInActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ConfirmSuperiorActivitiesInActivityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <CheckBox
+            android:id="@+id/ConfirmSuperiorActivitiesInActivityCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I confirm to include the current activity \n which I am participating in below activity(s):" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/ConfirmSuperiorActivitiesInActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ConfirmTasksInActivityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <CheckBox
+            android:id="@+id/ConfirmTasksInActivityCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I confirm to include below task(s) to \n the current activity which I am in:" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/ConfirmTasksInActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ConfirmAssigneeInActivityRequestLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <CheckBox
+            android:id="@+id/ConfirmAssigneeInActivityRequestCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I confirm to add below people to \n the current activity which I am in:" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/ConfirmAssigneeInActivityRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ConfirmSubActivitiesInActivityRequestLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <CheckBox
+            android:id="@+id/ConfirmSubActivitiesInActivityRequestCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I confirm to include below activity(s) to \n the current activity which I am in:" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/ConfirmSubActivitiesInActivityRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ConfirmSuperiorActivitiesInActivityRequestLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <CheckBox
+            android:id="@+id/ConfirmSuperiorActivitiesInActivityRequestCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I confirm to include the current activity \n which I am participating in below activity(s):" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/ConfirmSuperiorActivitiesInActivityRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ConfirmTasksInActivityRequestLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <CheckBox
+            android:id="@+id/ConfirmTasksInActivityRequestCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I confirm to include below task(s) to \n the current activity which I am in:" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/ConfirmTasksInActivityRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/confirmButtonActivityDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"/>
+
+</LinearLayout>

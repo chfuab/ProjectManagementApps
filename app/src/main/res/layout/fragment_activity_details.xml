@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ActivityDetails">
+
+    <ScrollView
+        android:id="@+id/activityDetailsAll"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/activityDetailsTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Title"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/activityDetailsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/activityDetailsScopeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Scope"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/activityDetailsScope"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:id="@+id/activityDetailsMemberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/activityDetailsAssigneeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Members: "
+                    android:textSize="20sp"/>
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/assigneeChipsGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </com.google.android.material.chip.ChipGroup>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/activityDetailsConfirmationListLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/activityDetailsConfirmationListText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Confirmation List"
+                    android:textSize="20sp"/>
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/confirmationListChipsGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </com.google.android.material.chip.ChipGroup>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/activityDetailsSuperiorActivitiesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/activityDetailsSuperiorActivitiesText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="This activity is the sub-activity of below activities:"
+                    android:textSize="20sp"/>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/activityChipsGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.google.android.material.chip.ChipGroup>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activityDetailsDescriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Description"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/activityDetailsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/ProgressLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/activityDetailsAll">
+        <TextView
+            android:id="@+id/progressTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Progress:"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/progressReading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="xx%"
+            android:textSize="20sp"/>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:indeterminate="false"
+            android:max="100" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activityDetailsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ProgressLinearLayout"
+        android:background="@android:color/white"
+        tools:listitem="@layout/item_tasks" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabTaskList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/activityDetailsRecyclerView"
+        android:layout_alignRight="@+id/activityDetailsRecyclerView"
+        android:src="@drawable/ic_add"
+        app:tint="@color/white"
+        android:layout_margin="16dp" />
+    <LinearLayout
+        android:id="@+id/fabThisActivityDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="vertical">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabActivityConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_done"
+            app:tint="@color/white"
+            android:layout_margin="16dp"
+            android:visibility="visible"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabActivityEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            app:tint="@color/white"
+            android:layout_margin="16dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

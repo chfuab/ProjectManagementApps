@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginPage">
+    <fragment
+        android:id="@+id/loginPage"
+        android:name="com.example.projectmanagement.LoginPage"
+        android:label="Login"
+        tools:layout="@layout/fragment_login_page" >
+    </fragment>
+    <fragment
+        android:id="@+id/itemsList"
+        android:name="com.example.projectmanagement.ItemsList"
+        android:label="Item list"
+        tools:layout="@layout/fragment_items_list" >
+    </fragment>
+    <fragment
+        android:id="@+id/signUpPage"
+        android:name="com.example.projectmanagement.SignUp"
+        android:label="Sign Up Page"
+        tools:layout="@layout/fragment_sign_up" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/editActivity"
+        android:name="com.example.projectmanagement.EditActivity"
+        android:label="Edit Activity"
+        tools:layout="@layout/fragment_edit_activity" >
+    </fragment>
+    <fragment
+        android:id="@+id/editTask"
+        android:name="com.example.projectmanagement.EditTask"
+        android:label="Edit Task"
+        tools:layout="@layout/fragment_edit_task" >
+    </fragment>
+    <fragment
+        android:id="@+id/activityDetails"
+        android:name="com.example.projectmanagement.ActivityDetails"
+        android:label="Activity Details"
+        tools:layout="@layout/fragment_activity_details" >
+    </fragment>
+    <fragment
+        android:id="@+id/notificationDetails"
+        android:name="com.example.projectmanagement.NotificationDetails"
+        android:label="Notification Details"
+        tools:layout="@layout/fragment_notification_details" >
+    </fragment>
+    <fragment
+        android:id="@+id/taskDetails"
+        android:name="com.example.projectmanagement.TaskDetails"
+        android:label="Task Details"
+        tools:layout="@layout/fragment_task_details" >
+    </fragment>
+    <fragment
+        android:id="@+id/taskDetailsAll"
+        android:name="com.example.projectmanagement.TaskDetailsAll"
+        android:label="Task Details"
+        tools:layout="@layout/fragment_task_details_all" >
+    </fragment>
+    <fragment
+        android:id="@+id/taskDetailsStatusUpdate"
+        android:name="com.example.projectmanagement.CreateStatusUpdate"
+        android:label="Edit update"
+        tools:layout="@layout/fragment_create_status_update" >
+    </fragment>
+</navigation>

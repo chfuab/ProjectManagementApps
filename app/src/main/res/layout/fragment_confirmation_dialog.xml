@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ConfirmAssigneeInTaskLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <CheckBox
+            android:id="@+id/ConfirmAssigneeInTaskCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I confirm to add below people to \n the current task which I am in:" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/ConfirmAssigneeInTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ConfirmToBeAssigneeActivityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <CheckBox
+            android:id="@+id/ConfirmToBeAssigneeActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I confirm to participate in below activity(s):" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/activitiesAssigneeConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ConfirmToBeAssigneeTaskLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/ConfirmToBeAssigneeTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I confirm to participate in this task" />
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/taskAssigneeConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/subActivitiesConfirmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <CheckBox
+            android:id="@+id/subActivitiesConfirmCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I accept to include below selected \n activity(activities) as sub-Activity(Activities):  " />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/subActivitiesConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/superiorActivitiesForActivityConfirmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <CheckBox
+            android:id="@+id/superiorActivitiesForActivityConfirmCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I accept to include below selected \n activity(activities) as superior-Activity(Activities):  " />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/superiorActivitiesForActivityConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tasksInActivityConfirmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <CheckBox
+            android:id="@+id/tasksInActivityConfirmCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I accept to include below selected task(s) as \n sub-Task(s) in this Activity:  " />
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/tasksInActivityConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/activitiesConfirmForTasksLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/activitiesConfirmForTasksCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I accept to let below selected activity(s) as \n superior Activity(s) of this task:  " />
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/activitiesConfirmForTasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/superiorTasksConfirmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/superiorTasksConfirmCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I accept to include below selected task(s) as \n superior-Task(s) of this task:  " />
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/superiorTasksConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subTasksConfirmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/subTasksConfirmCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I accept to include below selected task(s) as \n sub-Task(s) of this task:  " />
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/subTasksConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/confirmRequestTaskAssigneeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/confirmRequestTaskAssigneeCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I confirm to include below people as members of this task:" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/confirmRequestTaskAssignee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/confirmRequestSubTaskLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/confirmRequestSubTaskCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I confirm to add below task(s) as sub task to this task:" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/confirmRequestSubTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/confirmRequestSuperiorTaskLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/confirmRequestSuperiorTaskCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I confirm to add below task(s) as superior task to this task:" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/confirmRequestSuperiorTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/confirmRequestSuperiorActivitiesForTaskLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/confirmRequestSuperiorActivitiesForTaskCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I confirm to add below activity(s) as superior activities to this task:" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/confirmRequestSuperiorActivitiesForTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/confirmDialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"/>
+
+</LinearLayout>

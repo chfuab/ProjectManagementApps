@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ProjectManagement</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reset_password">Check your email and follow the instruction to reset password.</string>
+    <string name="search_for_a_document">Search for a document</string>
+    <string name="all_documents">All documents</string>
+    <string name="search_for_an_activity">Search for an activity</string>
+    <string name="task_progress">Task progress</string>
+    <string name="search_for_user">Search for user</string>
+    <string name="search_for_a_notification">Search for a notification</string>
+    <string name="all_notifications">All notifications</string>
+    <string name="Invitation_join_activity">Invitation to join an activity</string>
+    <string name="Invitation_join_task">Invitation to join a task</string>
+    <string name="status_waiting_for_confirmation">Waiting for confirmation</string>
+    <string name="status_completed_confirmation">Confirmed</string>
+    <string name="status_cancelled">Cancelled</string>
+</resources>

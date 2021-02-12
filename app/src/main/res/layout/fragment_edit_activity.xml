@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/setActivityTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:text="Activity title" />
+            <EditText
+                android:id="@+id/setActivityTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setActivityTitleText"
+                android:background="@android:color/transparent"
+                android:textSize="15sp"
+                android:gravity="top"
+                android:hint="Type your activity title here..."/>
+            <TextView
+                android:id="@+id/setActivityScopeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setActivityTitle"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:text="Activity scope" />
+            <EditText
+                android:id="@+id/setActivityScope"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/setActivityScopeText"
+                android:background="@android:color/transparent"
+                android:textSize="15sp"
+                android:gravity="top"
+                android:hint="Type your activity scope here..."/>
+
+
+            <LinearLayout
+                android:id="@+id/setActivityAssigneeAllLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/setActivityAssigneeTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/setActivityDescription">
+
+                    <TextView
+                        android:id="@+id/setActivityAssigneeText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:text="Assignee" />
+                    <ImageButton
+                        android:id="@+id/addAssignee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_add"/>
+                </LinearLayout>
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/setActivityAssignee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setActivityAssigneeTitle"
+                    app:singleLine="false">
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setActivityToWhichActivityAllLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/setActivityToWhichActivityTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/setActivityAssignee">
+
+                    <TextView
+                        android:id="@+id/setActivityToWhichActivityText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:text="Superior activity:" />
+                    <ImageButton
+                        android:id="@+id/addActivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_add"/>
+                </LinearLayout>
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/setActivityToWhichActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setActivityToWhichActivityTitle"
+                    app:singleLine="false">
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/setIncludeWhichActivitiesAllLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/setIncludeWhichActivitiesTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/setActivityAssignee">
+
+                    <TextView
+                        android:id="@+id/setIncludeWhichActivitiesText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:text="Sub Activities activity:" />
+                    <ImageButton
+                        android:id="@+id/addSubActivities"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_add"/>
+                </LinearLayout>
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/setIncludeWhichActivities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setActivityToWhichActivityTitle"
+                    app:singleLine="false">
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/setIncludeWhichTasksAllLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/setIncludeWhichTasksTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/setActivityAssignee">
+
+                    <TextView
+                        android:id="@+id/setIncludeWhichTasksText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:text="Sub Tasks of this activity:" />
+                    <ImageButton
+                        android:id="@+id/addSubTasks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_add"/>
+                </LinearLayout>
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/setIncludeWhichTasks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setActivityToWhichActivityTitle"
+                    app:singleLine="false">
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/setActivityDescriptionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/setActivityDescriptionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setActivityScope"
+                    android:textSize="20sp"
+                    android:text="Activity description" />
+                <EditText
+                    android:id="@+id/setActivityDescription"
+                    android:layout_width="match_parent"
+                    android:gravity="top"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/setActivityDescriptionText"
+                    android:layout_alignLeft="@+id/setActivityTitle"
+                    android:background="@android:color/transparent"
+                    android:textSize="15sp"
+                    android:hint="Activity description"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/confirmActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:layout_below="@+id/setActivityToWhichActivityAllLayout"
+                android:layout_alignEnd="@+id/setActivityToWhichActivityTitle"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
